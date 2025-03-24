@@ -10,7 +10,7 @@ input,
 select
 {
 width: 100%;
-padding:8px; margin:5px 0;
+padding:10px; margin:6px 0;
 border: 1px solid grey;
 border-radius:5px;
 display: block;
@@ -20,19 +20,23 @@ button,
 input[type=submit],
 input[type=button]
 {
-color:white; background:skyblue;
-border: 1px solid transparent;
+color:white; background: #E30B5C; /* Raspberry Rose */
+border: none;
 cursor:pointer;
-align-items: center;
+display: inline-block;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background 0.3s ease;
 }
 
-button:hover,input[type=submit]:hover,input[type=button]:hover{background:aqua; }
+button:hover,input[type=submit]:hover,input[type=button]:hover{background:#c2084c; }
 
 ul {margin: 0; padding: 0; list-style-type:none;}
-li {padding: 0; left:0; }
+li {padding: 5px; left:0; }
 
-table {border-collapse:collapse; border-spacing:0; width:100%; color: #000;}
-table th, table td { border:none; text-align:left; padding:8px; }
-table tr { background:#f8f8f8; }
-table tr:nth-child(even){ background:#fff;}
-table th { height:37px; }
+
+table {border-collapse: collapse; width: 100%; color: #000;}
+table th, table td {border: none; text-align: left; padding: 10px; }
+table tr {background: #CF6786; }
+table tr:nth-child(even){background: #CF6786; }
+table th {height: 40px; font-weight: bold;}
