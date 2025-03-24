@@ -44,15 +44,9 @@ background:purple;
 
     <section id="form">
         <form>
-            <label>Username :</label>
-            <input type="text"><br>
-
-            <label>Password :</label>
-            <input type="password"><br>
-
-            <label>Warna :</label>
-            <input type="color"><br>
-
+            <label>Username :</label><input id="username" type="text"><br>
+            <label>Password :</label><input class="bg-grey" type="password"><br>
+            <label>Warna :</label><input class="bg-grey" type="color"><br>
             <label>Dropdown:</label>
             <select>
                 <option>1</option>
