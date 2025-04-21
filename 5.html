@@ -9,6 +9,7 @@
         h1 { color: #2980b9; }
         .box { width: 100px; height: 100px; background-color: #3498db; margin: 10px; }
         button { padding: 10px 20px; border: none; background-color: #2ecc71; color: white; cursor: pointer; }
+        .boxx {width: 100px; height: 100px; background-color: lightblue; text-align: center; color: whitesmoke; cursor: pointer; line-height: 200px; font-weight: bold; border-radius: 10px; transition: 0.3s;}
     </style>
 </head>
 <body>
@@ -17,12 +18,43 @@
     <div class="box" id="colorBox"></div>
     <button onclick="changeColor()">Ubah Warna</button>
 
+    <h1 id="judul">Bandung</h1>
+    <button class="btn">Click me!</button>
+
+    <div id="boxx">Arahkan Mouse ke Sini</div>
+
     <script>
         // Seleksi elemen DOM dan event handling
         function changeColor() {
             const box = document.getElementById('colorBox');
             box.style.backgroundColor = box.style.backgroundColor === 'tomato' ? 'darkgreen' : 'tomato';
         }
+
+        // contoh penggunaan 
+        let heading = document.getElementById("judul");
+        let tombol = document.querySelector(".btn");
+
+        tombol.addEventListener("click", function(){
+          heading.style.color="pink";
+          heading.textContent="Jawa Barat";
+
+        });
+        // contoh mouseover salah satu event handling
+        let boxx = document.getElementById("boxx");
+
+        boxx.addEventListener("mouseover", function(){
+          boxx.style.backgroundColor="lightblue";
+          boxx.textContent="Mouse di atas";
+        });
+
+        boxx.addEventListener("mouseout", function(){
+          boxx.style.backgroundColor="LightGreen";
+
+          boxx.textContent="Arahkan Mouse Ke Sini";
+        });
+
+
+        
     </script>
 </body>
 </html>
