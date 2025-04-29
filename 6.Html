@@ -3,38 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulasi HTML + CSS dengan JavaScript</title>
+    <title>Manipulasi HTML + CSS dengan JavaScript - Tema Autumn</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #FFF8E7; /* background lembut */
+            color: #8B4513; /* teks coklat tanah */
+        }
+
+        h1 {
+            color: #B22222; /* merah daun kering */
+        }
+
+        button {
+            background-color: #FFA500; /* oranye */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF8C00; /* oranye tua saat hover */
+        }
+
         #dynamicContent { 
-            padding: 10px; 
-            border: 1px solid #ddd; 
+            padding: 15px; 
+            border: 2px solid #B22222; 
+            background-color: #FFD700; /* kuning emas */
+            border-radius: 8px;
             margin: 10px 0; 
             transition: all 0.5s ease; 
         }
+
         .highlight { 
-            color: white; 
-            background-color: #2980b9; 
-            padding: 5px; 
-            border-radius: 4px; 
+            background-color: #FF8C00; /* oranye gelap */
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
         }
+
         .hidden { 
             opacity: 0; 
             visibility: hidden; 
             transition: opacity 0.5s ease, visibility 0.5s ease; 
         }
+
         .animate {
             animation: bounce 0.6s ease forwards;
         }
+
         @keyframes bounce {
             0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+            50% { transform: scale(1.1); }
             100% { transform: scale(1); }
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #FFE4B5; /* krem coklat */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #B22222;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Manipulasi HTML + CSS dengan JavaScript</h1>
+    <h1>Manipulasi HTML + CSS dengan JavaScript - Tema Autumn</h1>
 
     <button onclick="changeContent()">Ubah Konten</button>
     <button onclick="toggleVisibility()">Tampilkan/Sembunyikan</button>
@@ -45,10 +93,10 @@
 
     <form onsubmit="validateForm(event)">
         <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required>
 
         <button type="submit">Kirim</button>
     </form>
